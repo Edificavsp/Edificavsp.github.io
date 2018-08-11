@@ -1372,3 +1372,176 @@ body {
 .dropup .dropdown-toggle::after {
   display: none;
 }
+.cid-r0qEA3koHy {
+  background-image: url("../../../assets/images/jumbotron.jpg");
+}
+.cid-r0qF3NyFnM {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/jumbotron.jpg");
+}
+.cid-r0qF3NyFnM .nav-tabs .nav-item.open .nav-link:focus,
+.cid-r0qF3NyFnM .nav-tabs .nav-link.active:focus {
+  outline: none;
+}
+.cid-r0qF3NyFnM .nav-tabs {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: none;
+}
+.cid-r0qF3NyFnM .nav-tabs .nav-item {
+  padding: .5rem;
+}
+.cid-r0qF3NyFnM .nav-tabs .nav-link {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  transition: all .5s;
+}
+.cid-r0qF3NyFnM .nav-tabs .nav-link:hover {
+  cursor: pointer;
+  background-color: #149dcc;
+}
+.cid-r0qF3NyFnM .nav-tabs .nav-link.active {
+  font-weight: 500;
+  color: #ffffff;
+  font-style: normal;
+  background-color: #149dcc;
+  border-color: #149dcc;
+}
+.cid-r0qF3NyFnM .nav-tabs .nav-link.active:hover {
+  background-color: #149dcc;
+}
+.cid-r0qF3NyFnM p {
+  color: #ffffff;
+}
+.cid-r0qF3NyFnM .mbr-text {
+  text-align: center;
+}
+.cid-r0qEYf1vkE {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/jumbotron.jpg");
+}
+.cid-r0qF0i3SRj {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/background6.jpg");
+}
+.cid-r0qF0i3SRj h4 {
+  font-weight: 500;
+  color: #ffffff;
+}
+.cid-r0qF0i3SRj p {
+  color: #ffffff;
+}
+.cid-r0qF0i3SRj .card {
+  margin-bottom: 2rem;
+}
+.cid-r0qF0i3SRj .card-img {
+  border-radius: 0;
+  padding: 2rem 2rem 0 2rem;
+  background-color: #149dcc;
+}
+.cid-r0qF0i3SRj .card-img span {
+  font-size: 100px;
+  color: #ffffff;
+}
+.cid-r0qF0i3SRj .card-box {
+  padding-bottom: 2rem;
+  background-color: #149dcc;
+  background: linear-gradient(#149dcc, transparent);
+}
+.cid-r0qF0i3SRj .card-box .card-title {
+  margin: 0;
+  padding: 2rem 2rem 0 2rem;
+}
+.cid-r0qF0i3SRj .card-box .mbr-text {
+  margin-bottom: 0;
+  padding: 2rem 2rem 0 2rem;
+}
+.cid-r0qF0i3SRj .card-box .mbr-section-btn {
+  padding-top: 1rem;
+}
+.cid-r0qF0i3SRj .card-box .mbr-section-btn a {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.cid-r0qF8WC78h {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #2e2e2e;
+}
+.cid-r0qF8WC78h .row-links {
+  width: 100%;
+  justify-content: center;
+}
+.cid-r0qF8WC78h .social-row {
+  width: 100%;
+  justify-content: center;
+}
+.cid-r0qF8WC78h .media-container-row {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cid-r0qF8WC78h .media-container-row .foot-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+}
+.cid-r0qF8WC78h .media-container-row .foot-menu li {
+  padding: 0 1rem 1rem 1rem;
+}
+.cid-r0qF8WC78h .media-container-row .foot-menu li p {
+  margin: 0;
+}
+.cid-r0qF8WC78h .media-container-row .social-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+.cid-r0qF8WC78h .media-container-row .social-list .mbr-iconfont-social {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.cid-r0qF8WC78h .media-container-row .social-list .soc-item {
+  margin: 0 .5rem;
+}
+.cid-r0qF8WC78h .media-container-row .social-list a {
+  margin: 0;
+  opacity: .5;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+.cid-r0qF8WC78h .media-container-row .social-list a:hover {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .cid-r0qF8WC78h .media-container-row .social-list {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+}
+.cid-r0qF8WC78h .media-container-row .row-copirayt {
+  word-break: break-word;
+  width: 100%;
+}
+.cid-r0qF8WC78h .media-container-row .row-copirayt p {
+  width: 100%;
+}
+.cid-r0qF86uMih {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #2e2e2e;
+}
