@@ -34,7 +34,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 34,
+    "uniqCompNum": 37,
     "versionPublish": "4.8.1",
     "screenshot": "screenshot.png"
   },
@@ -90,26 +90,6 @@
           "soundURL": "url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F290095167",
           "_name": "soundcloud2",
           "_anchor": "soundcloud2-x"
-        },
-        {
-          "_inherit": "soundcloud1",
-          "_params": {
-            "paddingTop": "4",
-            "paddingBottom": "0",
-            "sound": "https://soundcloud.com/trap-housemusic/despacito-luis-fonsi-daddy-yankee",
-            "autoplay": true,
-            "fullWidth": true,
-            "bgColor": "#fff"
-          },
-          "alias": "soundcloud",
-          "_tags": [
-            "Extensión"
-          ],
-          "_afterNavbarItem": false,
-          "iframeSRC": "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F191477804&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
-          "soundURL": "url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F191477804",
-          "_name": "soundcloud2",
-          "_anchor": "soundcloud2-n"
         }
       ]
     },
@@ -117,7 +97,7 @@
       "settings": {
         "meta_descr": "Web Builder Description",
         "title": "Page 1",
-        "order": 1
+        "order": 2
       },
       "components": [
         {
@@ -371,6 +351,80 @@
           "_global": true,
           "_once": true,
           "_params": {}
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "title": "Page 2",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 1
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=OBPeL681T7Y\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#465052\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    En construcción</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "r0ybvbXIbE",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-y"
+        },
+        {
+          "_inherit": "soundcloud1",
+          "_params": {
+            "paddingTop": "0",
+            "paddingBottom": "0",
+            "sound": "https://soundcloud.com/ricardo-pinos-2015/bob-el-constructor-intro-fandub-espanol-latino",
+            "autoplay": true,
+            "fullWidth": false,
+            "bgColor": "#232323"
+          },
+          "alias": "soundcloud",
+          "_tags": [
+            "Extensión"
+          ],
+          "_afterNavbarItem": false,
+          "iframeSRC": "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F290095167&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+          "soundURL": "url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F290095167",
+          "_name": "soundcloud2",
+          "_anchor": "soundcloud2-z"
+        },
+        {
+          "_inherit": "soundcloud1",
+          "_params": {
+            "paddingTop": "4",
+            "paddingBottom": "0",
+            "sound": "https://soundcloud.com/trap-housemusic/despacito-luis-fonsi-daddy-yankee",
+            "autoplay": true,
+            "fullWidth": true,
+            "bgColor": "#fff"
+          },
+          "alias": "soundcloud",
+          "_tags": [
+            "Extensión"
+          ],
+          "_afterNavbarItem": false,
+          "iframeSRC": "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F191477804&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+          "soundURL": "url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F191477804",
+          "_name": "soundcloud2",
+          "_anchor": "soundcloud2-10"
         }
       ]
     }
